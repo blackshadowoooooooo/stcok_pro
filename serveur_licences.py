@@ -259,7 +259,7 @@ tr:last-child td{border-bottom:none}tr:hover td{background:#fafbfc}
       <td>{{ l.date_expiration.strftime('%d/%m/%Y') }}</td>
       <td>
         {% set jr = l.jours_restants() %}
-        <strong style="color:{% if jr==0 %}#dc2626{% elif jr<=5 %}#d97706{% else %}#059669{% endif%;font-size:15px">
+        <strong style="color:{% if jr==0 %}#dc2626{% elif jr<=5 %}#d97706{% else %}#059669{% endif %};font-size:15px">
           {{ jr }}j
         </strong>
       </td>
